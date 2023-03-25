@@ -1,0 +1,117 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header img {
+    height: 70px;
+}
+
+.header div.svg svg {
+    height: 70px;
+}
+
+.header div.logo div.svg path {
+    fill: black;
+}
+
+.header div.logo img {
+    margin-left: -15px;
+}
+
+.header div.localization div.svg path,
+.header div.phone div.svg path,
+.header div.email div.svg path {
+    fill: #ff5e15;
+    stroke: #ffffff;
+    stroke-width: 1px;
+}
+
+.logo, .localization, .phone, .email {
+    display: flex;
+    font-size: 16px;
+}
+
+.localization > div.description {
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.phone > div.description, .email > div.description {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.email {
+    margin-right: 30px;
+}
+
+
+.menu {
+    background-color: #ff5e15;
+    padding: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 10px;
+    justify-content: space-around;
+}
+
+.menu ul:first-child {
+    margin-bottom: 10px;
+}
+
+.picture {
+    background-image: url("../images/construction.jpg");
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.picture div.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+}
+
+.picture div.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.picture div.title div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
